@@ -1,7 +1,7 @@
 locals {
   network_interface_names = ["interface_1", "interface_2"]
 
-  security_rule = [
+  security_rules = [
     {
       name                       = "allow-ssh"
       priority                   = 100
