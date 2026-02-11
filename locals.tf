@@ -1,5 +1,5 @@
 locals {
-  network_interface_name = ["interface_1", "interface_2"]
+  network_interface_names = ["interface_1", "interface_2"]
 
   security_rule = [
     {
