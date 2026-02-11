@@ -29,7 +29,7 @@ resource "azurerm_network_security_group" "example" {
   location            = azurerm_resource_group.example.location
   resource_group_name = azurerm_resource_group.example.name
 
-  dynamic "security_rules" {
+  dynamic "security_rule" {
     for_each = local.security_rules
     content {
       name                       = security_rule.value.name
